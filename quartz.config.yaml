@@ -206,10 +206,19 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: tim20160413/mlstudy
+        repoId: R_kgDOV4vy6A
+        category: Announcements
+        categoryId: DIC_kwDOV4vy6M4DL0yT
+        mapping: pathname
+        strict: false
+        reactionsEnabled: true
+        inputPosition: bottom
+        lang: zh-CN
     layout:
       position: afterBody
       priority: 10
@@ -217,8 +226,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/tim20160413/mlstudy
     layout:
       position: footer
       priority: 50
